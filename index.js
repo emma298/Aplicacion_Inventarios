@@ -37,7 +37,7 @@ app.use('/api/asignaciones', asignacionRoute);
 app.use('/api/inventarios', inventarioRoute);
 
 
-mongoose.connect('mongodb://localhost:27017/MyDatabase')
+mongoose.connect('mongodb+srv://2311081047:<db_password>@cluster0.n0buw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 .then(() => {
     console.log('Se establecio la conexion a base de datos exitosamente');
     app.listen(3000, () => {
